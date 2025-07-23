@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dark Mode SaaS Landing Page</title>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="bg-gary-900 text-gray-100">
+    <!--Navbar-->
+    <nav
+      class="bg-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+      <h1 class="text-2xl font-bold text-blue-400">SaaSly</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-2xl text-white">☰</button>
+    </nav>
+
+    <!--Hero Section-->
+    <section
+      class="bg-gary-900 py-12 px-6 flex flex-col-reverse md:flex-row items-center jsutify-center gap-8">
+      <div class="md:w-1/2 space-y-4 text-center md:text-left">
+        <h2 class="text=4xl font-bold text-white">
+          Build your SaaS website faster
+        </h2>
+        <p class="text-gray-400">
+          Tailwind CSS lets you build modern, responsive design without writing
+          custom css
+        </p>
+        <button
+          class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+          Get Started
+        </button>
+      </div>
+      <div class="md:w-1/2">
+        <img
+          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Hero Image"
+          class="rounded-lg shadow-md" />
+      </div>
+    </section>
+
+    <!--Features-->
+    <section id="features" class="py-12 px-6 bg-gray-800">
+      <h2 class="text-3xl font-semibold text-center text-white mb-10">
+        Core Features
+      </h2>
+      <div class="grid grid-cols-12 gap-6">
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3>Fast Performence</h3>
+          <p>Optimized for speed and performence</p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3 class="font-bold text-lg mb-2 text-white">Responsive Design</h3>
+          <p class="text-sm text-gray-300">
+            Mobile-first layout for all devices.
+          </p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3 class="font-bold text-lg mb-2 text-white">Easy Customization</h3>
+          <p class="text-sm text-gray-300">Style with utilities only.</p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3 class="font-bold text-lg mb-2 text-white">Easy Customization</h3>
+          <p class="text-sm text-gray-300">Style with utilities only.</p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3 class="font-bold text-lg mb-2 text-white">Easy Customization</h3>
+          <p class="text-sm text-gray-300">Style with utilities only.</p>
+        </div>
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-4 p-6 bg-gray-700 rounded shadow text-center">
+          <h3 class="font-bold text-lg mb-2 text-white">Easy Customization</h3>
+          <p class="text-sm text-gray-300">Style with utilities only.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Pricing-->
+    <section id="pricing" class="py-12 px-6 bg-gray-900">
+      <h2 class="text-3xl font-semibold text-center text-white mb-10">
+        Pricing Plans
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-bold mb-2 text-white">Basic</h3>
+          <p class="text-2xl font-semibold mb-4 text-blue-400">$19/mo</p>
+          <ul class="text-sm text-gray-300 space-y-3 mb-4">
+            <li>1 Project</li>
+            <li>Basic Support</li>
+          </ul>
+          <button
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Choose Plan
+          </button>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-bold mb-2 text-white">Basic</h3>
+          <p class="text-2xl font-semibold mb-4 text-blue-400">$49/mo</p>
+          <ul class="text-sm text-gray-300 space-y-3 mb-4">
+            <li>10 Projects</li>
+            <li>Priority Support</li>
+          </ul>
+          <button
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Choose Plan
+          </button>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-bold mb-2 text-white">Basic</h3>
+          <p class="text-2xl font-semibold mb-4 text-blue-400">$99/mo</p>
+          <ul class="text-sm text-gray-300 space-y-3 mb-4">
+            <li>Unlimited Projects</li>
+            <li>24/7 Support</li>
+          </ul>
+          <button
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Choose Plan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Form-->
+    <section id="contact" class="py-12 px-6 bg-gray-800">
+      <h2 class="text-2xl font-bold text-center mb-6 text-white">Contact Us</h2>
+      <form
+        action=""
+        class="max-w-2xl mx-auto bg-gray-900 p-6 rounded shadow space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            placeholder="First Name"
+            class="bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded w-full focus:ring-blue-500" />
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded w-full focus:ring-blue-500" />
+        </div>
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded w-full focus:ring-blue-500" />
+        <textarea
+          name=""
+          id=""
+          rows="5"
+          placeholder="Your Message"
+          class="bg-gray-800 border border-gray-700 text-white px-4 py-2 rounded w-full focus:ring-2 focus:ring-blue-500"></textarea>
+        <button
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-gray-900 text-white p-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+        <div>
+          <h3 class="font-bold text-xl mb-2">SaaSly</h3>
+          <p class="text-gray-400">© Made in ❤️ By Jyoti</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Links</h4>
+          <ul class="space-y-1 text-gray-300">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Follow Us</h4>
+          <ul class="flex items-center jsutify-center md:justify-start space-x-4">
+            <li><a href="#">📸</a></li>
+            <li><a href="#">📖</a></li>
+            <li><a href="#">🎁</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
